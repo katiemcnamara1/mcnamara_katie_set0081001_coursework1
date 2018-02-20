@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+
+.header {
+  padding: 20px;
+  font-size: 40px;
+  font-family: courier;
+  text-align: center;
+  background-image: url(http://supernatural.buzz/wp-content/uploads/2015/09/binary-code-pattern.png);
+}
+
+.quoteMainPage{
+  font-size: 40px;
+  font-family: courier;
+  color: #B0C4DE;
+
+}
+
+mark {
+  background-color: #B0C4DE;
+  color: white;
+}
+
+.navButtons {
+  background-color: #B0C4DE;
+  padding: 20px;
+  border: none;
+  width: 25%;
+  float: left;
+  color: white;
+  font-size: 20px;
+  font-family: courier;
+}
+
+.navButtons:hover {
+  background-color: #778899;
+}
+
+.cipherHeadings {
+  padding: 20px;
+  color: Grey;
+  font-size: 40px;
+  font-family: fantasy;
+}
+
+.cipherInfo {
+  color: grey;
+  font-family: fantasy;
+}
+
+.cipherInfoMainPage{
+  margin-top: 100px;
+  color: grey;
+font-family: fantasy;
+}
+
+
+.cipherInfoMainPage2{
+  padding: 10px;
+  color: grey;
+font-family: fantasy;
+}
+
+
+.plainText {
+  margin-top: 40px;
+  margin-left: 500px;
+}
+
+.outputArea {
+  margin-left: 500px;
+}
+
+/* Footer */
+
+.footer {
+  overflow: hidden;
+  text-align: center;
+  background-color: #B0C4DE;
+  margin-top: 150;
+  width: 100%;
+  font-family: courier;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}

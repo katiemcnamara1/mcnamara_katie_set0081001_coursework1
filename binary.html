@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="binary.js"></script>
+  <link rel="stylesheet" type="text/css" href="ciphers.css">
+
+  <div class="header">
+    <h2><mark>Wonderful world of Ciphers</mark> </h2>
+  </div>
+  <br />
+  <div class="navigationBar">
+
+    <button type="button" onclick="window.location='binary.html'" id="binarybutton" class="navButtons">Binary</button>
+    <button type="button" onclick="window.location='caesar.html'" id="caesarbutton" class="navButtons">Caesar</button>
+    <button type="button" onclick="window.location='AtBash.html'" id="AtBashbutton" class="navButtons">AtBash</button>
+    <button type="button" onclick="window.location='index.html'" id="indexbutton" class="navButtons">Home</button>
+  </div>
+  <div class="cipherHeadings">
+    <br />
+
+    <center>Binary Cipher</center>
+  </div>
+</head>
+
+<body>
+
+
+  <div class="cipherInfo">
+    <p>
+      <center>
+        Alluded by Sir Francis Bacon in 1605, this cipher uses binary to encrypt any given message.
+      </center>
+    </p>
+    <p>
+      <center>
+        Binary numerals are used to represent number simply by using the symbols/digits 0 and 1. Here it has been used to represent letters, as the below example demonstrates.
+      </center>
+    </p>
+    <p>
+      <center>
+        Alphabet: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+      </center>
+      <p>
+        <center>
+          Binary: 00001 00010 00011 00100 00101 00110 00111 01000 01001 01010 01011 01100 01101 01110 01111 10000 10001 10010 10011 10100 10101 10110 10111 11000 11001 11010
+        </center>
+      </p>
+    </p>
+
+  </div>
+
+  <div class="plainText" id="input">
+    <textarea rows="4" cols="50" id="input_message" placeholder="Type your message here"></textarea>
+    <button type="button" onclick="binaryEncode()" id="encrypt_button">encrypt</button>
+    <button type="button" onclick="binaryDecode()" id="decrypt_button">decrypt</button>
+
+  </div>
+
+
+
+  <div class="outputArea">
+    <textarea rows="4" cols="50" id="output_message" placeholder="Here is your encryption"></textarea>
+    <div id="output"></div>
+  </div>
+
+
+</body>
+
+</html>

@@ -48,7 +48,7 @@ function caesarDecrypt() {
 
       index -= step;
       if (index < 0) {
-        index += 25;
+        index += 26;
       }
       console.log(index);
 
@@ -61,31 +61,5 @@ function caesarDecrypt() {
 
   console.log(output);
   document.getElementById('outputMessage').value = output;
-
-}
-
-function binaryEncode() {
-
-  var output = document.getElementById("output_message");
-
-  var input = document.getElementById("input_message").value.toLowerCase();
-  output.value = "";
-  for (i = 0; i < input.length; i++) {
-    output.value += input[i].charCodeAt(0).toString(2) + " ";
-  }
-
-
-}
-
-
-function binaryDecode() {
-
-  var output = document.getElementById("output_message");
-
-  var input = document.getElementById("input_message").value.toLowerCase();
-  output.value = "";
-  for (i = 0; i < input.length; i++) {
-    output.value += input[i].toString(2).charCodeAt(0) + " ";
-  }
 
 }

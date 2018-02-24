@@ -16,6 +16,8 @@
     <button type="button" onclick="window.location='AtBash.html'" id="AtBashbutton" class="navButtons">AtBash</button>
     <button type="button" onclick="window.location='index.html'" id="indexbutton" class="navButtons">Home</button>
   </div>
+
+
   <div class="cipherHeadings">
     <br />
 
@@ -58,16 +60,13 @@
   </div>
 
   <div class="plainText">
-    <textarea rows="4" cols="50" id="input_message" placeholder="Type your message here"></textarea>
-    <button type="button" onclick="caesar()" id="encrypt_button">encrypt</button>
-    <button type="button" onclick="caesarDecrypt()" id="decrypt_button">decrypt</button>
+    <textarea rows="4" cols="30" style="font-size:25px" id="inputMessage" placeholder="  Type your message here"></textarea>
+    <button type="button" onclick="caesar()" class="encryptButton">encrypt</button>
+    <button type="button" onclick="caesarDecrypt()" class="decryptButton">decrypt</button>
     <input type="number" id="step" value="3" max="25" min="0">
   </div>
-
-
-
   <div class="outputArea">
-    <textarea rows="4" cols="50" id="output_message" placeholder="Here is your encryption"></textarea>
+    <textarea rows="4" cols="30" style="font-size:25px" id="outputMessage" placeholder="  Here is your encryption"></textarea>
     <div id="output"></div>
   </div>
 

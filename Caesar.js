@@ -2,10 +2,9 @@ function caesar() {
 
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-  ];
+    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-  var input = document.getElementById('input_message').value.toLowerCase();
+  var input = document.getElementById('inputMessage').value.toLowerCase();
   var step = parseInt(document.getElementById('step').value);
   var output = "";
   var temp = "";
@@ -26,7 +25,7 @@ function caesar() {
     }
 
     console.log(output);
-    document.getElementById('output_message').value = output;
+    document.getElementById('outputMessage').value = output;
 
   }
 }
@@ -34,10 +33,9 @@ function caesar() {
 function caesarDecrypt() {
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-  ];
+    'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-  var input = document.getElementById('input_message').value.toLowerCase();
+  var input = document.getElementById('inputMessage').value.toLowerCase();
   var step = parseInt(document.getElementById('step').value);
   var output = "";
   var temp = "";
@@ -62,7 +60,7 @@ function caesarDecrypt() {
   }
 
   console.log(output);
-  document.getElementById('output_message').value = output;
+  document.getElementById('outputMessage').value = output;
 
 }
 

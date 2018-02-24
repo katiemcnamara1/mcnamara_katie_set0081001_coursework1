@@ -8,7 +8,7 @@ body {
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
+
 
 .header {
   padding: 20px;
@@ -16,6 +16,15 @@ body {
   font-family: courier;
   text-align: center;
   background-image: url(http://supernatural.buzz/wp-content/uploads/2015/09/binary-code-pattern.png);
+}
+
+
+
+.headerText{
+  padding: 20px;
+  font-size: 40px;
+  font-family: courier;
+  float:left;
 }
 
 .quoteMainPage{
@@ -28,6 +37,7 @@ body {
 mark {
   background-color: #B0C4DE;
   color: white;
+  padding: 10px;
 }
 
 .navButtons {
@@ -52,6 +62,15 @@ mark {
   font-family: fantasy;
 }
 
+.cipherHeadingsDesign {
+  margin-right: 950px;
+  padding: 20px;
+  font-size: 40px;
+  font-family: fantasy;
+  color: grey;
+
+}
+
 .cipherInfo {
   color: grey;
   font-family: fantasy;
@@ -73,12 +92,15 @@ font-family: fantasy;
 
 .plainText {
   margin-top: 40px;
-  margin-left: 500px;
+  margin-left: 450px;
+
 }
 
 .outputArea {
-  margin-left: 500px;
+  margin-left: 450px;
 }
+
+
 
 /* Footer */
 
@@ -86,12 +108,37 @@ font-family: fantasy;
   overflow: hidden;
   text-align: center;
   background-color: #B0C4DE;
-  margin-top: 150;
+  margin-top: 100px;
   width: 100%;
   font-family: courier;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+.encryptButton{
+  background-color: #B0C4DE;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+.decryptButton{
+  background-color: #B0C4DE;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
 
 @media (max-width: 800px) {
   .leftcolumn, .rightcolumn {
@@ -100,7 +147,7 @@ font-family: fantasy;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
 
 @media (max-width: 400px) {
   .topnav a {

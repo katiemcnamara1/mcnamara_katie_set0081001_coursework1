@@ -7,50 +7,230 @@
 </head>
 
 <body>
+
+  <h1><center>
+    Design Document
+  </center></h1>
+  <br />
+
   <p>
-    This is the background picture in the header:
+    This document demonstrates all of the typographical and presentational elements used to create this site.
   </p>
+
+
+  <p>
+    Please note this website was created using IOS safari, therefore the general appearance may vary between devices and operating systems.
+  </p>
+
+  <br />
+
   <div class="header">
-    <p></p>
+    <p><mark>[1]</mark></p>
   </div>
 
+
+
   <div class="headerText">
+    <p>
+      [2]
+    </p>
     <p>
       <mark>This is the heading text</mark>
     </p>
   </div>
 
   <div class="cipherHeadingsDesign">
-    <br />
+
     <p>
       <center>
-
-        This is a page header
+        [3] <br /> This is a page header
       </center>
     </p>
   </div>
 
-  <div class="navigationBar">
 
-    <button type="button"  id="binarybutton" class="navButtons">This is</button>
-    <button type="button"  id="caesarbutton" class="navButtons">a </button>
-    <button type="button"  id="AtBashbutton" class="navButtons">navigation</button>
-    <button type="button"  id="indexbutton" class="navButtons">bar</button>
+
+  <br />
+  <div class="navigationBar">
+    <p>
+
+      [4]
+    </p>
+
+    <button type="button" id="binarybutton" class="navButtons">This is</button>
+    <button type="button" id="caesarbutton" class="navButtons">a </button>
+    <button type="button" id="AtBashbutton" class="navButtons">navigation</button>
+    <button type="button" id="indexbutton" class="navButtons">bar</button>
     <br />
     <br />
-    <br />
+
 
   </div>
-
-
-
-  <div class="footer">
+  <br />
+  <br />
+  <p>
+    [5]
+  </p>
+  <div class="footerDesign">
     <h2><mark>footer</mark></h2>
   </div>
 
-<br />
-    <textarea rows="4" cols="50" style="font-size:25px" id="input_message" placeholder="This is a input area box"></textarea>
-<br />
-<br />
-<button type="button" onclick="binaryEncode()" class="encryptButton">button</button>
+  <br />
+
+
+  <p>
+    [6]
+  </p>
+  <textarea rows="4" cols="50" style="font-size:25px" id="input_message" placeholder="This is a input area box"></textarea>
+  <br />
+  <br />
+
+  <p>
+    [7]
+  </p>
+  <button type="button" onclick="" class="navButtons">button</button>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <p>
+    [1] Background image at top of each page
+  </p>
+  <p>
+    To get the width padding:20px; </p>
+  <p>
+    image address url (http://supernatural.buzz/wp-content/uploads/2015/09/binary-code-pattern.png).
+  </p>
+  <p>
+    All located inside the same &lt;div&gt; as the header text.
+  </p>
+  <br />
+  <p>
+    [2] Header text at top of each page used within a &lt;h1&gt; tag and contained within same &lt;div&gt; tag as the background image.
+  </p>
+
+  <p>
+    Font-size 40px; Font-family: courier; text-align: center;
+  </p>
+  <p>
+    To get the the blue and white effect of the text on top of the picture a HTML mark was used.
+  </p>
+  <p>
+    The mark was created in CSS by doing the following:
+  </p>
+  <p>
+    This is the colour behind the text - background-color: <mark>#B0C4DE;</mark>
+  </p>
+  <p>
+    This is the colour of the text - color: white;
+  </p>
+  <p>
+    This is the thickness of the mark itself - padding: 10px;
+  </p>
+  <br />
+  <p>
+    [3] Page header,contained within a &lt;div&gt; tag that is used for every cipher Heading.
+  </p>
+  <p>
+    padding: 20px;
+  </p>
+  <p>
+    Style of font - font- family: fantasy;
+  </p>
+  <p>
+    Colour of font - color: grey;
+  </p>
+  <br />
+  <p>
+    [4] Navigation bar used to travel between pages. Contained within one &lt;div&gt; tag as each button has the same class=""
+  </p>
+
+  <p>
+    4 separate buttons joined together to create one long connected strip.
+  </p>
+
+  <p>
+    Each button has the background ground colour blue and font color white <mark>Example</mark>
+  </p>
+  <p>
+    Thickness of each button is padding: 20px;
+  </p>
+  <p>
+    Each button has a width:25% as there is 4 buttons that allows the bar to take up the whole width (100%)
+  </p>
+  <p>
+    Font size and font colour respectively 20px; courier;
+  </p>
+
+  <p>
+    When each button is hovered over the background colour of it changes to #778899, this was accomplished by using the built in css feature: hover.
+  </p>
+
+  <br />
+  <p>
+    [5] The footer is used once and that is on the homepage. Contained within its own &lt;div&gt; tag it also uses the &lt;mark&gt; tag to add colour to it.
+  </p>
+  <p>
+    Pushes text to center of footer bar text-align: center;
+  </p>
+  <p>
+    Thickiness of bar is width: 100%
+  </p>
+  <p>
+    Pushed down from top 100 pixels, margin-top: 100px;
+  </p>
+
+  <p>
+    Style of font is font-family: courier;
+  </p>
+  <br />
+
+  <p>
+    [6] Text area used for the input message, there is also an output area but both follow the same CSS. Each text area has its own &lt;div&gt; tag.
+  </p>
+  <p>
+    <p>
+      The format on how to create it is below:
+    </p>
+    <p>
+      <xmp>
+        <textarea rows="4" cols="30" style="font-size:25px" id="" placeholder=" "></textarea>
+      </xmp>
+    </p>
+    <p>
+      The rows and columns define how wide and tall the box is.
+    </p>
+    <p>
+      The font size is used for the input, outout and placeholder.
+    </p>
+    <p>
+      The placeholder is a temporary piece of text inside the textarea until the actual input/ouput is used.
+    </p>
+  </p>
+  <br />
+  <p>
+    [7] Typical example of a button used in both the navigation bar and when encrypting/decrypting a message. The skeleton of it is below:
+  </p>
+  <p>
+    <xmp>
+      <button type="button" onclick="" class="">button</button>
+    </xmp>
+<p>
+  onclick() is the path the button takes when its been clicked. For me it was used for my javascript encry and decrypt functions for each cipher.
+</p>
+class is related to the name of the &lt;div&gt; tag that it gets its design properties from.
+  </p>
+  <p>
+    Lastly, in between the open and close it says button, this is simply the text that will be displayed in the button. 
+  </p>
+
+
+
+
+
+
+
+
+
 </body>

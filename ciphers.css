@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: Arial;
@@ -21,7 +19,7 @@ body {
 
 
 .headerText{
-  padding: 20px;
+
   font-size: 40px;
   font-family: courier;
   float:left;
@@ -63,13 +61,15 @@ mark {
 }
 
 .cipherHeadingsDesign {
-  margin-right: 950px;
-  padding: 20px;
+margin-top:9px;
+  padding: 10px;
   font-size: 40px;
   font-family: fantasy;
   color: grey;
 
 }
+
+
 
 .cipherInfo {
   color: grey;
@@ -109,6 +109,15 @@ font-family: fantasy;
   text-align: center;
   background-color: #B0C4DE;
   margin-top: 100px;
+  width: 100%;
+  font-family: courier;
+}
+
+.footerDesign{
+  overflow: hidden;
+  text-align: center;
+  background-color: #B0C4DE;
+  margin-top: 60px;
   width: 100%;
   font-family: courier;
 }

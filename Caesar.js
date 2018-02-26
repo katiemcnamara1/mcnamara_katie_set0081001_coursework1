@@ -8,23 +8,29 @@ function caesar() {
   var step = parseInt(document.getElementById('step').value);
   var output = "";
   var temp = "";
-
+//go through each instance in the input message
   for (var i = 0; i < input.length; i++) {
+//set the index of input to variable temp
     temp = input[i];
+//if its not a space
     if (temp != " ") {
       var index = alphabet.indexOf(input[i]);
 
+//add the step count user chose to the index
       index += step;
       if (index > 25) {
+        //if user chooses more than 25 steps
         index -= 26;
       }
 
       output += alphabet[index];
-    } else {
+    }
+//if not more than 25
+    else {
       output += temp;
     }
 
-    console.log(output);
+//display output
     document.getElementById('outputMessage').value = output;
 
   }
@@ -45,12 +51,11 @@ function caesarDecrypt() {
     if (temp != " ") {
 
       var index = alphabet.indexOf(input[i]);
-
+//take the step count after from the index
       index -= step;
       if (index < 0) {
         index += 26;
       }
-      console.log(index);
 
       output += alphabet[index];
     } else {
@@ -59,7 +64,7 @@ function caesarDecrypt() {
 
   }
 
-  console.log(output);
+
   document.getElementById('outputMessage').value = output;
 
 }
